@@ -1,4 +1,4 @@
-# Depth First Traversal of a Connected Undirected Graph
+# DFS of a graph
 
 ## [Question](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1)
 
