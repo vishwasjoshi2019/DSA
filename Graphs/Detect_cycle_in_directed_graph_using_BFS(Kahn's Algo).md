@@ -1,7 +1,7 @@
 # Detect cycle in an directed graph using BFS (Kahn's Algorithm)
 
 ## [Question](https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1)
-Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not. Graph is in the form of adjacency list where adj[i] contains all the nodes ith node is having edge with.
+Given an directed graph with V vertices and E edges, check whether it contains any cycle or not. Graph is in the form of adjacency list where adj[i] contains all the nodes ith node is having edge with.
 ---
 
 ## Solution
