@@ -2,14 +2,41 @@
 # Negative weight cycle
 
 ## [Question](https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1)
-Question here
----
+Given a weighted directed graph with n nodes and m edges. Nodes are labeled from 0 to n-1, the task is to check if it contains a negative weight cycle or not.
+Note: edges[i] is defined as u, v and weight.---
 
 ## Solution
 
 ```cpp
-Given a weighted directed graph with n nodes and m edges. Nodes are labeled from 0 to n-1, the task is to check if it contains a negative weight cycle or not.
-Note: edges[i] is defined as u, v and weight
+	int isNegativeWeightCycle(int n, vector<vector<int>>edges){
+	    // Code here(i.e di
+        // Code here
+        vector<int> dist(n,1e8);
+        dist[0]=0;
+        
+        for(int i=0;i<n-1;i++){
+            for(auto it:edges){
+                int u=it[0];
+                int v=it[1];
+                int w=it[2];
+                if(dist[u]!=1e8 and dist[u]+w<dist[v]){
+                    dist[v]=dist[u]+w;
+                }
+                
+            }
+        }
+        
+        for(auto it:edges){
+            int u=it[0];
+            int v=it[1];
+            int w=it[2];
+            if(dist[u]+w<dist[v]){
+                return 1;
+            }
+        }
+        return 0;
+
+	}
 ```
 ## Creator
 
